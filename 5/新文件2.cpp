@@ -8,7 +8,7 @@ int main()
 	int r;
 	scanf("%d %d", &num1, &num2);
 	r = num1 % num2;
-	if(r == 0)
+	if (r == 0)
 	{
 		printf("%d is the mutiples of %d", num1, num2);
 	}

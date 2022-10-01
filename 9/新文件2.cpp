@@ -3,23 +3,23 @@
 
 int main()
 {
-	int miles;
-	int gasoline;
-	int mpgallon;
-	int parking;
-	int tolls;
+	float totalmiles;
+	float gasoline;
+	float milespergallon;
+	float parkingfee;
+	float tolls;
 	float total;
-	printf("Enter your total miles per day : ");
-	scanf("%d", &miles);
-	printf("Enter your cost per gallon of gasoline : ");
-	scanf("%d", &gasoline);
-	printf("Enter your average miles per gallon : ");
-	scanf("%d", &mpgallon);
-	printf("Enter your parking fee per day : ");
-	scanf("%d", &parking);
-	printf("Enter your tolls per day : ");
-	scanf("%d", &tolls);
-	total = (miles/mpgallon)*gasoline + parking + tolls;
+	printf("Enter your total miles per day: ");
+	scanf("%f", &totalmiles);
+	printf("Enter your cost per gallon of gasoline: ");
+	scanf("%f", &gasoline);
+	printf("Enter your average miles per gallon: ");
+	scanf("%f", &milespergallon);
+	printf("Enter your parking fee per day: ");
+	scanf("%f", &parkingfee);
+	printf("Enter your tolls per day: ");
+	scanf("%f", &tolls);
+	total = (totalmiles/milespergallon)*gasoline + parkingfee + tolls;
 	printf("Today you cost %f \n", total);
 	system("pause");
 	return 0;
